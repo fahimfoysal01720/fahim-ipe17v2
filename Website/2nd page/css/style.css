@@ -1,0 +1,129 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(222, 215, 215, 0.5), rgba(230, 10, 10, 0.5)), url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Button Container Styles */
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 250px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid transparent;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-in-out;
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btn:hover {
+    color: #333;
+    border-color: #fff;
+}
+
+/* First Button Specific Styles */
+.btn:nth-child(1) {
+    background: rgba(74, 107, 255, 0.8); /* Semi-transparent blue */
+    color: rgb(49, 33, 33);
+}
+
+/* Second Button Specific Styles */
+.btn:nth-child(2) {
+    background: rgba(255, 126, 95, 0.8); /* Semi-transparent orange */
+    color: rgb(41, 35, 35);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .button {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .btn {
+        width: 80%;
+        padding: 12px 30px;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        min-width: 200px;
+        font-size: 1rem;
+    }
+    
+    header {
+        padding: 20px;
+    }
+}

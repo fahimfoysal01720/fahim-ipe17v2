@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>seek coding</title>
+    <link rel='stylesheet' href='style2.css'>
+    <!---we had linked our css file----->
+
+
+
+
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='index.html'>Seek Coding</a>
+                <!---this if for the logo you can place a img here---->
+            </div>
+
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+
+                </ul>
+            </nav>
+            <!---navigation bar is finished lets run and see---->
+            <!---now let us make the styling for the navigation bar----->
+        </div>
+        <div id="login-form" class="login-page">
+           <!---creating form box----->
+            <div class="form-box">
+               <div class="button-box">
+                   <div id="btn"></div>
+                   <button
+                   type="button" onclick="login()" class="toggle-btn">Log In</button>
+                   <button
+                           type="button" onclick="login()" class="toggle-btn">Register</button>
+                </div>
+    
+                   <form id="login" class="input-group-login">
+                      <input type="text" class="input-field" placeholder="Email Id" required>
+                      <input type="password" class="input-field" placeholder="Enter Password" required>
+                      <input type="checkbox" class="check-box"><span>Remember Password</span>
+                      <button type="submit" class="submit-btn">Log In
+                          
+                      </button>
+                      
+                       
+                   </form>
+                   <!---register form---->
+                   <form id="register" class="input-group-register">
+                      <input type="text" class="input-field" placeholder="First Name" required>
+                      <input type="text" class="input-field" placeholder="Last Name" required>
+                      <input type="email" class="input-field" placeholder="Email Id" required>
+                      <input type="password" class="input-field" placeholder="Enter Password" required>
+                       <input type="checkbox"class='check-box'><span>Remember Password</span><button type="submit" class="submit-btn">Log in</button>
+                       
+                   </form>
+                   
+                   <form id="register" class="input-group-register">
+                      <input type="text" class="input-field" placeholder="First Name" required>
+                      <input type="text" class="input-field" placeholder="Last Name" required>
+                      <input type="email" class="input-field" placeholder="Email Id" required>
+                      <input type="password" class="input-field" placeholder="Enter Password" required>
+                      <input type="password" class="input-field" placeholder="Confirm Password" required>
+                       <input type="checkbox"class='check-box'><span>I agree ti the terms and conditions</span><button type="submit" class="submit-btn">Register</button>
+                       
+                   </form>
+                </div>
+            </div>
+                   
+    </div>
+        
+    
+</body>
+
+</html>
