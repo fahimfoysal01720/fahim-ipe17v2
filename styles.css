@@ -607,7 +607,8 @@ body > footer::before{content:"";position:absolute;inset:0 0 auto 0;height:1px;b
 .news-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:1rem;margin:2rem 0}
 .news-image-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:var(--r);background:var(--surface-2)}
 .news-image-card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--surface-3)}
-.news-image-card figcaption{padding:.75rem .9rem;color:var(--muted);font-size:.82rem}
+.news-image-card figcaption{display:flex;align-items:center;justify-content:space-between;gap:.5rem;padding:.75rem .9rem;color:var(--muted);font-size:.82rem}
+.news-download{flex:none;padding:.38rem .7rem;font-size:.75rem}
 .news-back{margin-top:.5rem}
 
 /* ================================== READER ================================= */

@@ -215,8 +215,8 @@ anyone can open `news.html` directly. Do not use it to protect confidential cont
 ## 10. Add photos to the News page
 
 Create `images/news/` in the project and add your image files there. The gallery in `news.html`
-expects `news-1.jpg`, `news-2.jpg`, and `news-3.jpg`. Update each image's `src`, `alt`, and
-caption to match your files and describe the photos. If your images are PNGs, use `.png` in the
-file name and `src`.
+expects `news-1.jpg`, `news-2.jpg`, and `news-3.jpg`. Each photo has a download link. Update its
+image `src`, download link `href`, download filename, `alt`, and caption to match your files.
+If your images are PNGs, use `.png` in the paths and download filenames.
 
 ---
