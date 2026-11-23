@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fahim Foysal | Industrial &amp; Production Engineer</title>
+<meta name="description" content="Portfolio of Fahim Foysal, IPE graduate from RUET and M.Sc. student at BUET: supply chain optimization, automation, lean and quality engineering. Read every project document right here in the browser.">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Sora,Helvetica,Arial,sans-serif' font-weight='800' font-size='30' fill='%23eaf1fb'%3EF F%3Ctspan fill='%23ff9f1c'%3E.%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+<meta name="color-scheme" content="dark light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  /* set the theme before first paint so there is no flash */
+  try {
+    var t = localStorage.getItem('theme');
+    document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  } catch (e) {}
+</script>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ============ ICON SPRITE (inline = no external dependency) ============ -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.01"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 7.5v.01"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2.5 6.5 9.5 7 9.5-7"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-3.2-.7L3 21l1.8-5.4A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5.1 5.1 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5.1 5.1 0 0 0 5 4.8 5.4 5.4 0 0 0 3.5 8.5c0 5.4 3.3 6.6 6.4 7A3.4 3.4 0 0 0 9 18.1V22"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></symbol>
+  <symbol id="i-cube" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+  <symbol id="i-branch" viewBox="0 0 24 24"><path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2L3 14h8l-1 8 10-12h-8z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-pie" viewBox="0 0 24 24"><path d="M21.2 15.9A10 10 0 1 1 8.1 2.8"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></symbol>
+  <symbol id="i-bug" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16M6.3 6.3l11.4 11.4M17.7 6.3L6.3 17.7"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3"/></symbol>
+  <symbol id="i-shrink" viewBox="0 0 24 24"><path d="M8 3v3a2 2 0 0 1-2 2H3M21 8h-3a2 2 0 0 1-2-2V3M3 16h3a2 2 0 0 1 2 2v3M16 21v-3a2 2 0 0 1 2-2h3"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+  <symbol id="i-scroll" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="5"/><path d="M12 6v3"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="m23 6-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></symbol>
+</svg>
+
+<div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================ NAV ============================ -->
+<nav class="nav" id="nav" aria-label="Main">
+  <a class="brand" href="#top" aria-label="Fahim Foysal, home">FF<span>.</span></a>
+
+  <ul id="menu" class="menu">
+    <span class="nav-pill" id="navPill" aria-hidden="true"></span>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#ipe-expertise">Core Courses</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#cv">CV</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li class="menu-foot" aria-hidden="false">
+      <p>Get in touch</p>
+      <a href="mailto:fahim.ruet.ipe17@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg> fahim.ruet.ipe17@gmail.com</a>
+      <a href="https://wa.me/8801720139068" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg> +880 1720 139068</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/fahim-foysal-9b5146218/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/fahimfoysal01720" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic" aria-hidden="true"><use href="#i-github"/></svg></a>
+        <a href="https://www.facebook.com/fahim.foysal.5836" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ic" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="nav-tools">
+    <button class="icon-btn" id="themeBtn" aria-label="Switch to light theme" title="Toggle theme">
+      <svg class="ic ic-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      <svg class="ic ic-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+    </button>
+    <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <svg class="ic ic-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="ic ic-x" aria-hidden="true"><use href="#i-x"/></svg>
+    </button>
+  </div>
+</nav>
+<div class="menu-scrim" id="menuScrim" hidden></div>
+
+<!-- ============================ HERO ============================ -->
+<header class="hero" id="top">
+  <canvas id="network" aria-hidden="true"></canvas>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+  <div class="orb orb-c" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hello"><span class="hello-dot" aria-hidden="true"></span>Hi, I&rsquo;m</p>
+      <h1>Fahim <span class="grad-text">Foysal</span></h1>
+      <p class="role">I work on <span id="typed" class="typed"></span><span class="caret" aria-hidden="true"></span></p>
+      <p class="hero-sub">Graduate in Industrial &amp; Production Engineering, RUET. Now pursuing M.Sc. in Advanced Engineering Management at BUET.</p>
+
+      <div class="hero-cta">
+        <a class="btn primary" href="#projects">
+          <svg class="ic" aria-hidden="true"><use href="#i-file"/></svg>
+          Explore projects
+        </a>
+        <a class="btn ghost" href="Fahim Foysal Web cv/index.html">
+          <svg class="ic" aria-hidden="true"><use href="#i-external"/></svg>
+          View CV
+        </a>
+        <a class="btn ghost" href="#contact">
+          <svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>
+          Contact me
+        </a>
+      </div>
+
+      <ul class="hero-meta">
+        <li><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg> Savar, Dhaka, Bangladesh</li>
+        <li><span class="pulse-dot" aria-hidden="true"></span> Open to research &amp; industry roles</li>
+      </ul>
+    </div>
+
+    <div class="hero-side">
+      <div class="photo">
+        <div class="photo-ring" aria-hidden="true"></div>
+        <img src="1.png" alt="Portrait of Fahim Foysal" id="profileImg" width="300" height="300">
+        <span class="photo-fallback" aria-hidden="true">FF</span>
+      </div>
+      <div class="float-chip chip-1" aria-hidden="true">SCM</div>
+      <div class="float-chip chip-2" aria-hidden="true">Lean</div>
+      <a class="wa-card" href="https://wa.me/8801720139068" target="_blank" rel="noopener">
+        <span class="wa-qr">
+          <img src="whatsapp.jpg" alt="WhatsApp QR code" class="whatsapp-qr" loading="lazy">
+          <svg class="ic wa-icon" aria-hidden="true"><use href="#i-chat"/></svg>
+        </span>
+        <span class="wa-text">
+          <b><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg> +880 1720 139068</b>
+          <small>Scan or tap to chat</small>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <a class="scroll-hint" href="#about" aria-label="Scroll to About">
+    <svg class="ic" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+  </a>
+</header>
+
+<main id="main">
+
+  <!-- ============================ ABOUT ============================ -->
+  <section id="about" class="wrap">
+    <h2 class="reveal"><span>About me</span></h2>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>I am a graduate in Industrial &amp; Production Engineering from RUET with hands-on experience in Arduino-based automation, supply chain optimization, and web-based MIS projects. I want to build my career in a technology-driven organization, in a role where I can contribute to operational excellence, digital innovation, and sustainable industrial practices. I bring academic knowledge, programming skills, and leadership experience from student organizations.</p>
+        <div class="about-pills">
+          <span class="pill"><svg class="ic" aria-hidden="true"><use href="#i-branch"/></svg> Supply chain</span>
+          <span class="pill"><svg class="ic" aria-hidden="true"><use href="#i-zap"/></svg> Automation</span>
+          <span class="pill"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg> Lean &amp; quality</span>
+          <span class="pill"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg> Web &amp; data</span>
+        </div>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><b data-count="3.22" data-dec="2">0</b><span>B.Sc. CGPA (out of 4.00)</span></div>
+        <div class="stat"><b data-count="5">0</b><span>Academic projects</span></div>
+        <div class="stat"><b data-count="2">0</b><span>Published papers</span></div>
+        <div class="stat"><b data-count="2026">0</b><span>BUET M.Sc. started</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SKILLS ============================ -->
+  <section id="skills" class="wrap">
+    <h2 class="reveal"><span>Technical skills</span></h2>
+    <div class="skills-container">
+      <div class="skill-category reveal">
+        <h3><span class="ico-wrap"><svg class="ic" aria-hidden="true"><use href="#i-laptop"/></svg></span> Computer</h3>
+        <div class="skill-item"><span class="skill-name">MS Office Suite</span><div class="skill-level"><div class="level-bar" data-level="80"></div><span class="level-percent">80%</span></div></div>
+        <div class="skill-item"><span class="skill-name">XML Database</span><div class="skill-level"><div class="level-bar" data-level="40"></div><span class="level-percent">40%</span></div></div>
+      </div>
+      <div class="skill-category reveal">
+        <h3><span class="ico-wrap"><svg class="ic" aria-hidden="true"><use href="#i-cube"/></svg></span> Engineering software</h3>
+        <div class="skill-item"><span class="skill-name">SolidWorks</span><div class="skill-level"><div class="level-bar" data-level="20"></div><span class="level-percent">20%</span></div></div>
+        <div class="skill-item"><span class="skill-name">MATLAB</span><div class="skill-level"><div class="level-bar" data-level="40"></div><span class="level-percent">40%</span></div></div>
+        <div class="skill-item"><span class="skill-name">Mastercam</span><div class="skill-level"><div class="level-bar" data-level="30"></div><span class="level-percent">30%</span></div></div>
+        <div class="skill-item"><span class="skill-name">Arena Simulation</span><div class="skill-level"><div class="level-bar" data-level="20"></div><span class="level-percent">20%</span></div></div>
+      </div>
+      <div class="skill-category reveal">
+        <h3><span class="ico-wrap"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg></span> Programming</h3>
+        <div class="skill-item"><span class="skill-name">HTML / CSS</span><div class="skill-level"><div class="level-bar" data-level="60"></div><span class="level-percent">60%</span></div></div>
+        <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-level"><div class="level-bar" data-level="40"></div><span class="level-percent">40%</span></div></div>
+        <div class="skill-item"><span class="skill-name">Python</span><div class="skill-level"><div class="level-bar" data-level="30"></div><span class="level-percent">30%</span></div></div>
+        <div class="skill-item"><span class="skill-name">C Programming</span><div class="skill-level"><div class="level-bar" data-level="50"></div><span class="level-percent">50%</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ EDUCATION ============================ -->
+  <section id="education" class="wrap">
+    <h2 class="reveal"><span>Education</span></h2>
+    <div class="education-timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2026 &ndash; Present</div>
+        <div class="timeline-content">
+          <h3>M.Sc. in Advanced Engineering Management</h3>
+          <p>Bangladesh University of Engineering &amp; Technology (BUET)</p>
+          <p class="muted-sm">Started: April Semester, 2026</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2018 &ndash; 2023</div>
+        <div class="timeline-content">
+          <h3>B.Sc. in Industrial &amp; Production Engineering</h3>
+          <p>Rajshahi University of Engineering &amp; Technology (RUET)</p>
+          <p class="muted-sm">CGPA: 3.22 / 4.00</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2017</div>
+        <div class="timeline-content">
+          <h3>Higher Secondary Certificate (HSC)</h3>
+          <p>Science, Kushtia Govt College</p>
+          <p class="muted-sm">GPA: 5.00 / 5.00</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2015</div>
+        <div class="timeline-content">
+          <h3>Secondary School Certificate (SSC)</h3>
+          <p>Science, Kushtia Zilla School</p>
+          <p class="muted-sm">GPA: 5.00 / 5.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ IPE COURSES ============================ -->
+  <section id="ipe-expertise" class="wrap">
+    <h2 class="reveal"><span>IPE core courses</span></h2>
+    <div class="expertise-container">
+
+      <article class="expertise-card reveal">
+        <h3>Lean Manufacturing</h3>
+        <p>Eliminating waste through continuous improvement and flow optimization.</p>
+        <div class="tree-diagram" id="leanTree" role="img" aria-label="Lean manufacturing tree: principles, tools and benefits"></div>
+        <p class="hint"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg> Hover or tap a branch to focus it</p>
+      </article>
+
+      <article class="expertise-card reveal">
+        <h3>Total Quality Management</h3>
+        <p>An organization-wide approach to long-term success through customer satisfaction.</p>
+        <div class="fishbone-diagram" id="tqmFishbone" role="img" aria-label="Fishbone (Ishikawa) diagram with six cause categories"></div>
+        <p class="hint"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg> Tap a category to reveal example causes</p>
+      </article>
+
+      <article class="expertise-card reveal">
+        <h3>Six Sigma</h3>
+        <p>A data-driven approach to eliminating defects and reducing variation.</p>
+        <ul class="belt-list">
+          <li class="belt-row yellow">
+            <span class="belt-dot" aria-hidden="true"></span>
+            <div>
+              <b>Yellow belt <em>Team member</em></b>
+              <span>Basic understanding, joins projects</span>
+            </div>
+          </li>
+          <li class="belt-row green">
+            <span class="belt-dot" aria-hidden="true"></span>
+            <div>
+              <b>Green belt <em>Project leader</em></b>
+              <span>Leads projects part-time, analyzes data</span>
+            </div>
+          </li>
+          <li class="belt-row black">
+            <span class="belt-dot" aria-hidden="true"></span>
+            <div>
+              <b>Black belt <em>Full-time expert</em></b>
+              <span>Leads complex projects, coaches teams</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <article class="expertise-card reveal">
+        <h3>Supply Chain Management</h3>
+        <p>Managing the flow of goods and services from raw materials to end customers.</p>
+        <div class="scm-flow">
+          <div class="flow-item">Supplier</div>
+          <div class="flow-link"><i></i></div>
+          <div class="flow-item">Manufacturer</div>
+          <div class="flow-link"><i></i></div>
+          <div class="flow-item">Distributor</div>
+          <div class="flow-link"><i></i></div>
+          <div class="flow-item">Retailer</div>
+          <div class="flow-link"><i></i></div>
+          <div class="flow-item">Customer</div>
+        </div>
+      </article>
+
+      <article class="expertise-card wide reveal">
+        <h3>Cost &amp; Management Accounting</h3>
+        <p>Cost analysis, budgeting, and decision-making to improve business performance.</p>
+        <div class="cma-topics">
+          <div class="topic-item">Managerial Accounting &amp; Business Environments</div>
+          <div class="topic-item">Cost Terms &amp; Concepts</div>
+          <div class="topic-item">Job Order Costing</div>
+          <div class="topic-item">Process Costing</div>
+          <div class="topic-item">Cost Behavior Analysis</div>
+          <div class="topic-item">Cost-Volume-Profit Relationships</div>
+          <div class="topic-item">Variable Costing</div>
+          <div class="topic-item">Profit Planning</div>
+          <div class="topic-item">Capital Budgeting</div>
+        </div>
+      </article>
+    </div>
+
+    <div class="methodologies reveal">
+      <h3>Key methodologies &amp; tools</h3>
+      <div class="tools-grid">
+        <div class="tool-item"><svg class="ic" aria-hidden="true"><use href="#i-branch"/></svg><span>Value Stream Mapping</span></div>
+        <div class="tool-item"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg><span>Statistical Process Control</span></div>
+        <div class="tool-item"><svg class="ic" aria-hidden="true"><use href="#i-zap"/></svg><span>Kaizen</span></div>
+        <div class="tool-item"><svg class="ic" aria-hidden="true"><use href="#i-grid"/></svg><span>5S</span></div>
+        <div class="tool-item"><svg class="ic" aria-hidden="true"><use href="#i-pie"/></svg><span>Pareto Analysis</span></div>
+        <div class="tool-item"><svg class="ic" aria-hidden="true"><use href="#i-bug"/></svg><span>Root Cause Analysis</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PROJECTS ============================ -->
+  <section id="projects" class="wrap">
+    <h2 class="reveal"><span>Projects &amp; research</span></h2>
+
+    <div class="projects-toolbar reveal">
+      <div class="filters" role="group" aria-label="Filter projects by category">
+        <button class="chip active" data-filter="all">All <em>5</em></button>
+        <button class="chip" data-filter="research">Research <em>3</em></button>
+        <button class="chip" data-filter="design">Design <em>1</em></button>
+        <button class="chip" data-filter="automation">Automation <em>1</em></button>
+      </div>
+      <label class="search">
+        <svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>
+        <input type="search" id="projectSearch" placeholder="Search projects, skills…" aria-label="Search projects">
+        <button type="button" class="search-clear" id="searchClear" aria-label="Clear search" hidden><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+      </label>
+    </div>
+
+    <p class="results-line" id="resultsLine" aria-live="polite"></p>
+
+    <div class="projects-container" id="projectsGrid">
+
+      <article class="project-card" data-cat="design" data-search="pedal powered washing machine design cost analysis solidworks qfd prototype">
+        <div class="card-spot" aria-hidden="true"></div>
+        <div class="project-top">
+          <span class="cat-badge design"><svg class="ic" aria-hidden="true"><use href="#i-cube"/></svg> Design</span>
+          <span class="doc-badge"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> PDF</span>
+        </div>
+        <h3>Pedal Powered Washing Machine</h3>
+        <p>Designing, marketing analysis, and prototyping.</p>
+        <div class="project-skills"><span>Cost Analysis</span><span>SolidWorks</span><span>QFD</span></div>
+        <div class="project-actions">
+          <button class="btn doc-open" data-doc="washing" type="button">
+            <svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> View documentation
+          </button>
+          <a class="icon-action" data-doc-download="washing" href="pdfd/documentation.pdf" download title="Download PDF" aria-label="Download PDF">
+            <svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>
+          </a>
+          <a class="icon-action" data-doc-href="washing" href="pdfd/documentation.pdf" target="_blank" rel="noopener" title="Open PDF in a new tab" aria-label="Open PDF in a new tab">
+            <svg class="ic" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="automation" data-search="automatic fan control arduino dht11 temperature humidity sensor bill of materials circuit">
+        <div class="card-spot" aria-hidden="true"></div>
+        <div class="project-top">
+          <span class="cat-badge automation"><svg class="ic" aria-hidden="true"><use href="#i-zap"/></svg> Automation</span>
+          <span class="doc-badge"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> PDF</span>
+        </div>
+        <h3>Automatic Fan Control</h3>
+        <p>Fan control using Arduino and a DHT11 humidity and temperature sensor.</p>
+        <div class="project-skills"><span>Bill of Materials</span><span>Electric Circuit</span><span>Arduino</span></div>
+        <div class="project-actions">
+          <button class="btn doc-open" data-doc="fan" type="button">
+            <svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> View documentation
+          </button>
+          <a class="icon-action" data-doc-download="fan" href="pdfp/documentation.pdf" download title="Download PDF" aria-label="Download PDF">
+            <svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>
+          </a>
+          <a class="icon-action" data-doc-href="fan" href="pdfp/documentation.pdf" target="_blank" rel="noopener" title="Open PDF in a new tab" aria-label="Open PDF in a new tab">
+            <svg class="ic" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="research" data-search="nirr e-accommodation mis management information system html css javascript break-even analysis ioem 2024">
+        <div class="card-spot" aria-hidden="true"></div>
+        <div class="project-top">
+          <span class="cat-badge research"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg> Research</span>
+          <span class="doc-badge"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> PDF</span>
+        </div>
+        <h3>Nirr: E-Accommodation (MIS)</h3>
+        <p>Management &amp; Information System based online project with a demo website in HTML, CSS and JavaScript. Published in IOEM, 2024.</p>
+        <div class="project-skills"><span>Break-Even Analysis</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="project-actions">
+          <button class="btn doc-open" data-doc="nirr" type="button">
+            <svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> View documentation
+          </button>
+          <a class="icon-action" data-doc-download="nirr" href="pdfm/documentation.pdf" download title="Download PDF" aria-label="Download PDF">
+            <svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>
+          </a>
+          <a class="icon-action" data-doc-href="nirr" href="pdfm/documentation.pdf" target="_blank" rel="noopener" title="Open PDF in a new tab" aria-label="Open PDF in a new tab">
+            <svg class="ic" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+        </div>
+        <a href="Website/Nirr.html" target="_blank" rel="noopener" class="text-link">
+          <svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg> Demo website
+        </a>
+      </article>
+
+      <article class="project-card" data-cat="research" data-search="undergraduate thesis multi-objective optimization supply chain distribution network nature-inspired algorithms pso ga green supply">
+        <div class="card-spot" aria-hidden="true"></div>
+        <div class="project-top">
+          <span class="cat-badge research"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg> Research</span>
+          <span class="doc-badge"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> PDF ×2</span>
+        </div>
+        <h3>Undergraduate thesis</h3>
+        <p>Multi-objective optimization of a multi-stage supply chain distribution network by nature-inspired algorithms: a green supply approach.</p>
+        <div class="project-skills"><span>Supply Chain Network</span><span>Distribution Network</span><span>Data Analysis</span><span>PSO</span><span>GA</span><span>GA-PSO</span></div>
+        <div class="project-actions">
+          <button class="btn doc-open" data-doc="thesis" type="button">
+            <svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> Thesis
+          </button>
+          <button class="btn doc-open ghost-btn" data-doc="network" type="button">
+            <svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> Additional
+          </button>
+          <a class="icon-action" data-doc-download="thesis" href="pdft/documentation.pdf" download title="Download thesis PDF" aria-label="Download thesis PDF">
+            <svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>
+          </a>
+          <a class="icon-action" data-doc-href="thesis" href="pdft/documentation.pdf" target="_blank" rel="noopener" title="Open thesis PDF in a new tab" aria-label="Open thesis PDF in a new tab">
+            <svg class="ic" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="research" data-search="case study covid-19 fmcg stocks stock market bangladesh time series rsi augmented dickeys fuller excel icmime 2022">
+        <div class="card-spot" aria-hidden="true"></div>
+        <div class="project-top">
+          <span class="cat-badge research"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg> Research</span>
+          <span class="doc-badge"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> PDF</span>
+        </div>
+        <h3>Case study: Covid-19 and FMCG stocks</h3>
+        <p>Impact of Covid-19 on the FMCG industry in the stock market in Bangladesh. Published in ICMIME, 2022.</p>
+        <div class="project-skills"><span>Time Series Analysis</span><span>RSI</span><span>Augmented Dickey-Fuller</span><span>MS Excel</span></div>
+        <div class="project-actions">
+          <button class="btn doc-open" data-doc="covid" type="button">
+            <svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> View documentation
+          </button>
+          <a class="icon-action" data-doc-download="covid" href="pdfc/documentation.pdf" download title="Download PDF" aria-label="Download PDF">
+            <svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>
+          </a>
+          <a class="icon-action" data-doc-href="covid" href="pdfc/documentation.pdf" target="_blank" rel="noopener" title="Open PDF in a new tab" aria-label="Open PDF in a new tab">
+            <svg class="ic" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>
+        <p>No projects match that search.</p>
+        <button class="btn ghost small" id="resetFilters" type="button">Clear filters</button>
+      </div>
+    </div>
+
+    <p class="docs-note reveal">
+      <svg class="ic" aria-hidden="true"><use href="#i-info"/></svg>
+      Every document opens in a built-in reader — no page reload, no lost context. Trouble viewing one?
+      Use <b>Open in new tab</b> or <b>Download</b> in the reader header.
+    </p>
+  </section>
+
+  <!-- ============================ CV ============================ -->
+  <section id="cv" class="wrap">
+    <div class="cv-card reveal">
+      <div class="cv-copy">
+        <h2>Curriculum vitae</h2>
+        <p>See my full CV online or download a copy.</p>
+      </div>
+      <div class="cv-actions">
+        <a class="btn primary" href="Fahim Foysal Web cv/index.html">
+          <svg class="ic" aria-hidden="true"><use href="#i-external"/></svg> Open CV
+        </a>
+        <button class="btn ghost" type="button" id="copyEmailBtn">
+          <svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg> Copy email
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CONTACT ============================ -->
+  <section id="contact" class="wrap">
+    <h2 class="reveal"><span>Contact</span></h2>
+    <div class="contact-container">
+      <div class="contact-info reveal">
+        <a class="contact-row" href="mailto:fahim.ruet.ipe17@gmail.com">
+          <span class="ci-ico"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span>
+          <span><b>Email</b><small>fahim.ruet.ipe17@gmail.com</small></span>
+          <svg class="ic ci-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+        </a>
+        <a class="contact-row" href="https://wa.me/8801720139068" target="_blank" rel="noopener">
+          <span class="ci-ico"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></span>
+          <span><b>WhatsApp</b><small>+880 1720 139068</small></span>
+          <svg class="ic ci-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+        </a>
+        <div class="contact-row">
+          <span class="ci-ico"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span>
+          <span><b>Location</b><small>Savar, Dhaka, Bangladesh</small></span>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form reveal" novalidate>
+        <div class="field">
+          <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+          <span class="field-err" data-err-for="name"></span>
+        </div>
+        <div class="field">
+          <input type="email" id="email" name="email" placeholder="Your email" autocomplete="email" required>
+          <span class="field-err" data-err-for="email"></span>
+        </div>
+        <div class="field">
+          <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+          <span class="field-err" data-err-for="message"></span>
+        </div>
+        <button type="submit" class="btn primary submit">
+          <span class="btn-label"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg> Send message</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="form-note">This opens your email app with the message ready to send.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <a class="brand footer-brand" href="#top">FF<span>.</span></a>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/fahim-foysal-9b5146218/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+      <a href="https://github.com/fahimfoysal01720" aria-label="GitHub" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-github"/></svg></a>
+      <a href="https://www.facebook.com/fahim.foysal.5836" aria-label="Facebook" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+    </div>
+    <p>&copy; <span id="year">2026</span> Fahim Foysal. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top" title="Back to top">
+  <svg class="ring" viewBox="0 0 48 48" aria-hidden="true">
+    <circle class="ring-bg" cx="24" cy="24" r="21"/>
+    <circle class="ring-fg" id="ringFg" cx="24" cy="24" r="21"/>
+  </svg>
+  <svg class="ic" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+</button>
+
+<!-- ============================ PDF READER ============================ -->
+<div class="modal" id="docModal" role="dialog" aria-modal="true" aria-labelledby="docTitle" aria-hidden="true">
+  <div class="modal-backdrop" data-close="1"></div>
+
+  <div class="modal-panel" id="docPanel" role="document">
+    <div class="drag-handle" aria-hidden="true"><span></span></div>
+
+    <header class="doc-head">
+      <div class="doc-mark" id="docMark">
+        <svg class="ic" aria-hidden="true"><use href="#i-file"/></svg>
+      </div>
+
+      <div class="doc-heading">
+        <p class="doc-eyebrow">
+          <span id="docKind">Project documentation</span>
+          <span class="dot-sep" aria-hidden="true"></span>
+          <span id="docCounter" class="doc-counter">1 of 6</span>
+        </p>
+        <h2 class="doc-title" id="docTitle">Loading…</h2>
+        <p class="doc-meta">
+          <span id="docCat">Research</span>
+          <span class="dot-sep" aria-hidden="true"></span>
+          <span id="docSize">PDF</span>
+          <span class="dot-sep" aria-hidden="true"></span>
+          <span id="docPath" class="doc-path">—</span>
+        </p>
+      </div>
+
+      <div class="doc-actions">
+        <button class="icon-btn sm" id="docCopy" type="button" title="Copy link to this document" aria-label="Copy link to this document">
+          <svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>
+        </button>
+        <button class="icon-btn sm" id="docExpand" type="button" title="Expand reader" aria-label="Expand reader">
+          <svg class="ic" aria-hidden="true"><use href="#i-expand"/></svg>
+        </button>
+        <button class="icon-btn sm" id="docNewTab" type="button" title="Open in a new tab" aria-label="Open in a new tab">
+          <svg class="ic" aria-hidden="true"><use href="#i-external"/></svg>
+        </button>
+        <a class="btn small primary doc-dl" id="docDownload" href="#" download>
+          <svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>
+          <span class="dl-label">Download</span>
+          <span class="dl-ring" aria-hidden="true"></span>
+        </a>
+        <button class="icon-btn sm close" id="docClose" type="button" title="Close (Esc)" aria-label="Close reader">
+          <svg class="ic" aria-hidden="true"><use href="#i-x"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="doc-body" id="docBody" tabindex="0">
+      <!-- states are injected here by script.js -->
+    </div>
+
+    <footer class="doc-foot">
+      <button class="doc-nav" id="docPrev" type="button">
+        <svg class="ic" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        <span><small>Previous</small><b id="docPrevName">—</b></span>
+      </button>
+      <p class="key-hint"><kbd>&larr;</kbd> <kbd>&rarr;</kbd> to browse <span class="dot-sep"></span> <kbd>Esc</kbd> to close</p>
+      <button class="doc-nav next" id="docNext" type="button">
+        <span><small>Next</small><b id="docNextName">—</b></span>
+        <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+      </button>
+    </footer>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toastWrap" role="status" aria-live="polite"></div>
+
+<noscript>
+  <div class="noscript">JavaScript is off, so the built-in document reader is unavailable. You can still open each project PDF directly from the links on its project card.</div>
+</noscript>
+
+</body>
+</html>
