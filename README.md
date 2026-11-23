@@ -203,4 +203,20 @@ In `script.js`, add an entry to `DOCS` (copy an existing one) and list it in `DO
 then add a card in `index.html` with `data-doc="<your-id>"` on the button. The reader picks
 up the title, page count, download name and deep link automatically.
 
+## 9. News page unlock
+
+The **Unlock and enter** button opens a password dialog and redirects to `news.html` when the
+password matches. Change `NEWS_UNLOCK_PASSWORD` near the top of `script.js` from
+`change-this-password` to the password you want.
+
+This is only a casual front-end gate: the password is visible in the site's JavaScript, and
+anyone can open `news.html` directly. Do not use it to protect confidential content.
+
+## 10. Add photos to the News page
+
+Create `images/news/` in the project and add your image files there. The gallery in `news.html`
+expects `news-1.jpg`, `news-2.jpg`, and `news-3.jpg`. Update each image's `src`, `alt`, and
+caption to match your files and describe the photos. If your images are PNGs, use `.png` in the
+file name and `src`.
+
 ---

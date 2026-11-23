@@ -577,6 +577,39 @@ body > footer::before{content:"";position:absolute;inset:0 0 auto 0;height:1px;b
 .to-top .ring-bg{stroke:color-mix(in srgb,var(--text) 10%,transparent)}
 .to-top .ring-fg{stroke:var(--accent);stroke-dasharray:132;stroke-dashoffset:132;transition:stroke-dashoffset .1s linear;stroke-linecap:round}
 
+/* ------------------------------- unlock gate ------------------------------ */
+.unlock-dialog{width:min(440px,calc(100% - 2rem));max-width:none;max-height:min(90svh,600px);padding:0;
+  border:1px solid var(--line-strong);border-radius:var(--r-lg);background:var(--surface);color:var(--text);box-shadow:var(--shadow-lg)}
+.unlock-dialog::backdrop{background:rgba(3,7,15,.72);backdrop-filter:blur(12px) saturate(130%)}
+[data-theme="light"] .unlock-dialog::backdrop{background:rgba(10,20,40,.5)}
+.unlock-panel{position:relative;display:grid;gap:1.2rem;padding:clamp(1.35rem,5vw,2rem)}
+.unlock-close{position:absolute;top:.8rem;right:.8rem}
+.unlock-heading{display:grid;justify-items:center;gap:.45rem;text-align:center;padding:0 1.4rem}
+.unlock-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;color:var(--accent);
+  background:color-mix(in srgb,var(--accent) 12%,transparent);border:1px solid color-mix(in srgb,var(--accent) 28%,transparent)}
+.unlock-icon .ic{width:24px;height:24px}
+.unlock-heading .form-kicker{margin-top:.2rem}
+.unlock-heading h2{font:700 clamp(1.25rem,4vw,1.55rem)/1.25 var(--head)}
+.unlock-form{display:grid;gap:.65rem}
+.unlock-form .btn{width:100%;margin-top:.2rem}
+.unlock-error{min-height:1.2em;color:var(--err);font-size:.82rem}
+.unlock-note{color:var(--muted);font-size:.75rem;line-height:1.5;text-align:center}
+
+/* ---------------------------------- news ---------------------------------- */
+.news-page{min-height:100svh;display:grid;place-items:center;padding:2rem 1rem}
+.news-card{width:min(720px,100%);padding:clamp(1.5rem,5vw,3rem);border:1px solid var(--line);
+  border-radius:var(--r-lg);background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 9%,var(--surface)),var(--surface) 62%);
+  box-shadow:var(--shadow)}
+.news-brand{display:inline-block;margin-bottom:2.5rem;font:800 1.4rem var(--head);letter-spacing:-.08em}
+.news-brand span{color:var(--accent-2)}
+.news-kicker{color:var(--accent);font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.news-card h1{margin:.45rem 0 1rem;font:700 clamp(2.2rem,7vw,4rem)/1.1 var(--head);letter-spacing:-.055em}
+.news-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:1rem;margin:2rem 0}
+.news-image-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:var(--r);background:var(--surface-2)}
+.news-image-card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--surface-3)}
+.news-image-card figcaption{padding:.75rem .9rem;color:var(--muted);font-size:.82rem}
+.news-back{margin-top:.5rem}
+
 /* ================================== READER ================================= */
 .modal{position:fixed;inset:0;z-index:500;display:grid;place-items:center;padding:clamp(0px,3vw,28px);
   visibility:hidden;opacity:0;transition:opacity .35s var(--ease),visibility .35s}

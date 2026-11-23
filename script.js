@@ -16,11 +16,39 @@
   const esc = str => String(str == null ? '' : str).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
   const icon = (name, cls = '') => `<svg class="ic ${cls}" aria-hidden="true"><use href="#i-${name}"/></svg>`;
   const SVGNS = 'http://www.w3.org/2000/svg';
+  const NEWS_UNLOCK_PASSWORD = '11223344';
   const svgEl = (tag, attrs = {}) => {
     const el = doc.createElementNS(SVGNS, tag);
     for (const k in attrs) el.setAttribute(k, attrs[k]);
     return el;
   };
+
+  /* --------------------------- News page unlock --------------------------- */
+  const newsDialog = $('#newsUnlockDialog');
+  const newsUnlockButton = $('#newsUnlockButton');
+  const newsUnlockForm = $('#newsUnlockForm');
+  const newsPassword = $('#newsPassword');
+  const newsUnlockError = $('#newsUnlockError');
+
+  newsUnlockButton?.addEventListener('click', () => {
+    newsUnlockError.textContent = '';
+    newsPassword.value = '';
+    newsDialog.showModal();
+    newsPassword.focus();
+  });
+  $('[data-close-unlock]')?.addEventListener('click', () => newsDialog.close());
+  newsUnlockForm?.addEventListener('submit', event => {
+    event.preventDefault();
+    if (newsPassword.value === NEWS_UNLOCK_PASSWORD) {
+      location.assign('news.html');
+      return;
+    }
+    newsUnlockError.textContent = 'That password is not correct. Please try again.';
+    newsPassword.select();
+  });
+  newsDialog?.addEventListener('click', event => {
+    if (event.target === newsDialog) newsDialog.close();
+  });
 
   /* -------------------------------- 2. theme ------------------------------- */
   const root = doc.documentElement;
